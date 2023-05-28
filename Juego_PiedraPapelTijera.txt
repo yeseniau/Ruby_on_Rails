@@ -1,0 +1,23 @@
+puts "Gugaremos Piedra, Papel o Tijera" 
+print "Escoje una opcion 1-Piedra, 2-Papel o 3-Tijera: " 
+usuario= gets.chomp.to_i
+pc = rand(1..3)
+
+# -----------jugadas-----------
+# tijera gana a papel 3 - 2        
+# piedra gana a tijera 1 - 3
+# papel gana a piedra 2 - 1
+
+puts "Usuario jugo: #{usuario}"
+puts "Computador jugo:  #{pc}"
+
+if (usuario==3 and pc==2) || (usuario==1 and pc==3) || (usuario==2 and pc==1)
+    puts "**** Usuario Gana ****"
+elsif (pc==3 and usuario==2) || (pc==1 and usuario==3) || (pc==2 and usuario==1) 
+    puts "**** Computador Gana ****"
+elsif usuario=pc 
+    puts "~~~~ Empate ~~~~"
+else
+    puts "---- Nadie Gana ----"
+end
+
