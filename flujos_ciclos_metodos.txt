@@ -47,7 +47,7 @@ end
 # end
 
 
-
+#--------------------------------------------
 puts 
 puts 
 puts "Requerimiento-3 Tabla de multiplicar del 0 al 9 ciclo for"
@@ -58,6 +58,7 @@ for i in (0..9)
     end
 end
 
+#--------------------------------------------
 puts 
 puts 
 puts "Requerimiento-4 Dibujo de Triangulo ciclo times"
