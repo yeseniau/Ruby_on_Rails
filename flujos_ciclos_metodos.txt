@@ -1,0 +1,78 @@
+puts "Requerimiento-1 Numeros pares de 2 en 2 ciclo while"
+i=0
+while i<=20 do
+    if i%2==0
+        print "#{i} - "
+      end   
+      i+=1
+end
+puts
+
+puts "Idenficar los numeros pares entre un rango de numeros que usted va a indicar"
+print "Desde: "
+desde=gets.chomp.to_i
+print "Hasta: "
+hasta=gets.chomp.to_i
+
+while desde <= hasta
+    print "#{desde} - " if desde.even?
+    desde += 1
+end
+
+#--------------------------------------------
+puts 
+puts 
+puts "Requerimiento-2 Numeros impares del 0 al 20 ciclo while"
+i=0
+while i<=20 do
+    if i%2==1
+      print "#{i} - "
+    end   
+    i+=1
+end
+puts
+puts "---- usando .odd? -----"
+j=0
+while j <= 20
+    if j.odd?
+        print "#{j} - "
+    end
+    j += 1
+end
+
+# negando el even: osea negando pares significa que son impares
+# while j <= 20
+#     print "#{j} - " if !j.even?
+#     j += 1
+# end
+
+
+
+puts 
+puts 
+puts "Requerimiento-3 Tabla de multiplicar del 0 al 9 ciclo for"
+for i in (0..9)
+    puts "------Tabla #{i} ------"
+    for j in (1..10)
+        puts "#{i} x #{j} = #{i*j}"  # interpolacion es ingresas una operacion dentro de un string
+    end
+end
+
+puts 
+puts 
+puts "Requerimiento-4 Dibujo de Triangulo ciclo times"
+
+#           1 alto 1 linea 0 espacio 1 escrib
+#           2      1       1         1      
+#     +            2       0         3
+#    +++       
+
+
+print "Ingrese la altura del triángulo: "
+alto = gets.chomp.to_i
+
+alto.times do |i|
+  puts " " * (alto - i - 1) + "+" * (2 * i + 1)
+end
+
+
