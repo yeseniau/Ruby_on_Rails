@@ -1,2 +1,2 @@
-# Rurby_on_Rails
+# Ruby_on_Rails
 Ejercicios codificados en ruby
