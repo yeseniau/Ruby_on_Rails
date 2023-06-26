@@ -13,3 +13,6 @@ DESAFIO 3:
 
 DESAFIO 4: apinasa
   Consumo de una api, arreglos y hash. Definicion de metodos y generacion de archivo html para mostrar los resultados en el navegador
+
+PRUEBA INTROCUCCION A LA PROGRAMACION CON RUBY
+  aplicando herencia para refactorizar el codigo
